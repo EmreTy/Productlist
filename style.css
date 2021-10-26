@@ -1,0 +1,39 @@
+.card {
+  display: flex;
+  border: 2px solid black;
+  margin-bottom: 10px;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: lightblue;
+}
+
+.product-image,
+.product-info {
+  width: 25%;
+}
+.product-data {
+  width: 80%;
+}
+
+.product-info {
+  position: relative;
+}
+button {
+  position: absolute;
+  bottom: 0;
+  width: 120px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.net-price::after {
+  content: ",- EUR";
+}
+
+.gross-price::after {
+  content: ",- EUR incl. VAT";
+}
